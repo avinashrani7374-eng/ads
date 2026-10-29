@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PulseAds — The right message. The right moment.</title>
+<meta name="description" content="PulseAds plans and runs Meta ad campaigns for gaming, cricket, trading, stock market and forex brands.">
+<meta property="og:title" content="PulseAds — Specialist Meta Ads Agency">
+<meta property="og:description" content="Creative, campaigns and full-funnel setup for specialist sectors.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070b;--card:#111118;--line:#ffffff14;--txt:#f4f1ea;--mut:#9a98a6;--gold:#f5b942;--hot:#ff5a3c;--blue:#1877f2;--grad:linear-gradient(120deg,#f5b942,#ff5a3c 55%,#ff2e88)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden;line-height:1.6}
+h1,h2,h3,.logo{font-family:'Syne',sans-serif;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wrap{max-width:1200px;margin:auto;padding:0 24px}
+/* background effects */
+.orb{position:fixed;border-radius:50%;filter:blur(110px);opacity:.35;z-index:-1;animation:float 18s ease-in-out infinite}
+.o1{width:520px;height:520px;background:#ff5a3c;top:-160px;left:-120px}
+.o2{width:460px;height:460px;background:#f5b942;bottom:-160px;right:-100px;animation-delay:-6s}
+.o3{width:340px;height:340px;background:#ff2e88;top:40%;left:45%;animation-delay:-12s;opacity:.18}
+@keyframes float{50%{transform:translate(60px,-40px) scale(1.12)}}
+.grain{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(circle at 50% 30%,#000 10%,transparent 70%)}
+#bar{position:fixed;top:0;left:0;height:3px;background:var(--grad);z-index:100;width:0}
+/* nav */
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:#07070bcc;border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-size:24px;font-weight:800;display:flex;align-items:center;gap:10px}
+.pulse{width:14px;height:14px;border-radius:50%;background:var(--hot);box-shadow:0 0 0 0 #ff5a3c99;animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 14px #ff5a3c00}100%{box-shadow:0 0 0 0 #ff5a3c00}}
+.links{display:flex;gap:32px;font-size:14px;color:var(--mut)}
+.links a:hover{color:var(--txt)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;background:var(--grad);color:#120a04;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px -12px #ff5a3caa}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,#fff8 50%,transparent 70%);transform:translateX(-100%);animation:shine 3.5s infinite}
+@keyframes shine{60%,100%{transform:translateX(100%)}}
+.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.ghost::after{display:none}
+/* hero */
+.hero{padding:90px 0 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.tag{display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--mut);margin-bottom:26px}
+.tag b{width:8px;height:8px;border-radius:50%;background:#3ddc84;animation:ping 1.8s infinite}
+h1{font-size:clamp(44px,7vw,92px);line-height:.98;font-weight:800}
+h1 span{display:block;opacity:0;transform:translateY(40px);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+h1 span:nth-child(2){animation-delay:.18s}
+@keyframes rise{to{opacity:1;transform:none}}
+.lead{color:var(--mut);font-size:18px;max-width:520px;margin:26px 0 36px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.stats{display:flex;gap:40px;margin-top:48px}
+.stats div b{font-family:Syne;font-size:34px;display:block}
+.stats div span{color:var(--mut);font-size:13px}
+/* phone + animated meta ads */
+.stage{position:relative;height:580px;perspective:1200px}
+.phone{position:absolute;left:50%;top:0;width:290px;height:570px;transform:translateX(-50%) rotateY(-12deg) rotateX(4deg);border-radius:42px;background:#0d0d14;border:8px solid #1d1d28;box-shadow:0 40px 80px -20px #000,0 0 0 1px #ffffff1a;overflow:hidden;animation:bob 6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateX(-50%) rotateY(-6deg) rotateX(2deg) translateY(-14px)}}
+.notch{width:110px;height:24px;background:#1d1d28;border-radius:0 0 16px 16px;margin:0 auto}
+.feed{height:calc(100% - 24px);overflow:hidden;position:relative}
+.track{animation:scroll 16s cubic-bezier(.7,0,.3,1) infinite}
+@keyframes scroll{0%,20%{transform:translateY(0)}25%,45%{transform:translateY(-470px)}50%,70%{transform:translateY(-940px)}75%,95%{transform:translateY(-1410px)}100%{transform:translateY(0)}}
+.ad{height:470px;padding:12px;border-bottom:1px solid var(--line)}
+.ad-h{display:flex;align-items:center;gap:8px;font-size:12px}
+.av{width:30px;height:30px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-weight:800;color:#120a04;font-size:13px}
+.ad-h small{display:block;color:var(--mut);font-size:10px}
+.ad p{font-size:11.5px;margin:8px 0;color:#d8d6de}
+.cr{height:270px;border-radius:10px;position:relative;overflow:hidden;display:grid;place-items:center;text-align:center}
+.cr h4{font-family:Syne;font-size:26px;line-height:1;z-index:2;position:relative}
+.cr .sub{font-size:11px;letter-spacing:.2em;opacity:.8;margin-top:8px;z-index:2;position:relative}
+.c1{background:radial-gradient(circle at 30% 20%,#ff2e88,#3a0b5c 70%)}
+.c2{background:radial-gradient(circle at 70% 80%,#1fae5b,#06301b 70%)}
+.c3{background:radial-gradient(circle at 50% 0,#f5b942,#4a1d00 75%)}
+.c4{background:radial-gradient(circle at 20% 80%,#1877f2,#06173a 70%)}
+.cr::before{content:"";position:absolute;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,#ffffff22,transparent 30%);animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chart{position:absolute;bottom:16px;left:16px;right:16px;height:70px;display:flex;align-items:flex-end;gap:6px;z-index:2}
+.chart i{flex:1;background:#fff;opacity:.85;border-radius:3px 3px 0 0;animation:grow 2s ease-in-out infinite alternate}
+.chart i:nth-child(2n){animation-delay:.3s}.chart i:nth-child(3n){animation-delay:.6s}
+@keyframes grow{from{height:15%}to{height:100%}}
+.ball{width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff6b6b,#a10d0d);position:absolute;z-index:2;animation:bounce 1.4s cubic-bezier(.5,0,.5,1) infinite alternate;top:30px;right:30px;box-shadow:inset -6px -6px 0 #0003}
+@keyframes bounce{to{transform:translate(-160px,170px) rotate(540deg)}}
+.dots{position:absolute;inset:0;z-index:1}
+.dots i{position:absolute;width:44px;height:44px;border-radius:50%;animation:pop 2.4s infinite}
+.dots i:nth-child(1){background:#ff3b3b;top:24px;left:24px}
+.dots i:nth-child(2){background:#3ddc84;top:24px;right:24px;animation-delay:.6s}
+.dots i:nth-child(3){background:#8b5cf6;bottom:24px;left:24px;animation-delay:1.2s}
+.dots i:nth-child(4){background:#f5b942;bottom:24px;right:24px;animation-delay:1.8s}
+@keyframes pop{50%{transform:scale(1.35);filter:brightness(1.4)}}
+.ticker{position:absolute;top:18px;left:0;right:0;font-family:monospace;font-size:13px;z-index:2;white-space:nowrap;animation:marq 6s linear infinite}
+@keyframes marq{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+.adcta{display:flex;justify-content:space-between;align-items:center;background:#1c1c26;border-radius:8px;padding:10px;margin-top:8px;font-size:11px}
+.adcta span{background:var(--blue);color:#fff;padding:6px 12px;border-radius:6px;font-weight:600}
+.react{display:flex;justify-content:space-between;color:var(--mut);font-size:10.5px;margin-top:8px}
+.float{position:absolute;background:#15151ecc;backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;padding:12px 16px;font-size:13px;box-shadow:0 20px 40px -15px #000;animation:bob2 5s ease-in-out infinite;z-index:3}
+.float b{font-family:Syne;font-size:20px;display:block}
+.f1{left:-10px;top:90px}.f2{right:-10px;top:300px;animation-delay:-2.5s}.f3{left:10px;bottom:30px;animation-delay:-1.2s}
+.up{color:#3ddc84}
+@keyframes bob2{50%{transform:translateY(-16px)}}
+/* marquee */
+.marquee{border-block:1px solid var(--line);padding:22px 0;overflow:hidden;margin:40px 0;background:#ffffff05}
+.mtrack{display:flex;gap:56px;width:max-content;animation:mq 26s linear infinite;font-family:Syne;font-size:30px;font-weight:700}
+.mtrack span{display:flex;align-items:center;gap:56px;color:var(--mut)}
+.mtrack span:nth-child(odd){color:var(--txt)}
+.mtrack span::after{content:"✦";color:var(--gold);font-size:20px}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:100px 0}
+.eyebrow{color:var(--gold);font-size:13px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px}
+h2{font-size:clamp(34px,5vw,62px);line-height:1.02;font-weight:800;max-width:780px}
+.intro{color:var(--mut);max-width:520px;margin-top:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.card{position:relative;padding:34px;border-radius:22px;background:var(--card);border:1px solid var(--line);overflow:hidden;transition:transform .2s,border-color .3s;transform-style:preserve-3d}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(400px circle at var(--x,50%) var(--y,50%),#f5b94222,transparent 40%);opacity:0;transition:opacity .3s}
+.card:hover{border-color:#f5b94255}.card:hover::before{opacity:1}
+.num{font-family:Syne;font-size:14px;color:var(--mut)}
+.ico{width:54px;height:54px;border-radius:14px;background:#ffffff0a;border:1px solid var(--line);display:grid;place-items:center;font-size:26px;margin:22px 0}
+.card small{font-size:11px;letter-spacing:.16em;color:var(--gold)}
+.card h3{font-size:26px;margin:6px 0 10px}
+.card p{color:var(--mut);font-size:15px}
+.card a{display:inline-block;margin-top:22px;font-weight:600;font-size:14px;border-bottom:1px solid var(--gold);padding-bottom:2px;transition:letter-spacing .3s}
+.card a:hover{letter-spacing:.04em}
+.note{color:var(--mut);font-size:13px;margin-top:28px;opacity:.75}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;counter-reset:s}
+.step{padding:34px;border-top:2px solid var(--line);position:relative}
+.step::before{content:"";position:absolute;top:-2px;left:0;height:2px;width:0;background:var(--grad);transition:width 1.2s .3s}
+.step.show::before{width:100%}
+.step b{font-family:Syne;font-size:56px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.step h3{font-size:26px;margin:8px 0}
+.step p{color:var(--mut)}
+.final{text-align:center;border-radius:32px;padding:90px 30px;background:radial-gradient(circle at 50% 0,#ff5a3c33,transparent 60%),var(--card);border:1px solid var(--line);position:relative;overflow:hidden}
+.final h2{margin:0 auto 34px}
+.final::after{content:"";position:absolute;inset:-2px;border-radius:32px;padding:2px;background:conic-gradient(from var(--a,0deg),transparent 70%,#f5b942,#ff5a3c,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:rot 5s linear infinite;pointer-events:none}
+@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes rot{to{--a:360deg}}
+footer{padding:40px 0;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer button{background:none;border:0;color:var(--mut);text-decoration:underline;cursor:pointer;font:inherit}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.show{opacity:1;transform:none}
+/* consent */
+#cc{position:fixed;bottom:20px;left:20px;right:20px;max-width:460px;background:#15151ef2;backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:18px;padding:20px;z-index:200;font-size:13.5px;color:var(--mut);display:none;box-shadow:0 30px 60px -20px #000}
+#cc strong{color:var(--txt);display:block;margin-bottom:6px}
+#cc .row{display:flex;gap:10px;margin-top:14px}
+#cc button{flex:1;padding:11px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--txt);font-weight:600;cursor:pointer}
+#cc button.ok{background:var(--grad);color:#120a04;border:0}
+.wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#229ed9;display:grid;place-items:center;z-index:90;box-shadow:0 10px 30px -5px #229ed9aa;animation:ping2 2.2s infinite}
+@keyframes ping2{0%{box-shadow:0 0 0 0 #229ed988}70%{box-shadow:0 0 0 18px #229ed900}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:50px}.grid,.steps{grid-template-columns:1fr}.links{display:none}.stage{height:600px}.f1,.f3{left:0}.f2{right:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal,h1 span{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="grain"></div>
+
+<nav><div class="wrap">
+  <a href="#" class="logo"><span class="pulse"></span>PulseAds</a>
+  <div class="links"><a href="#services">Services</a><a href="#ads">Ad Creatives</a><a href="#approach">Approach</a></div>
+  <a class="btn tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Let's talk →</a>
+</div></nav>
+
+<header class="wrap hero" id="ads">
+  <div>
+    <div class="tag"><b></b>Meta Ads specialists · Facebook & Instagram</div>
+    <h1><span>The right message.</span><span><em>The right moment.</em></span></h1>
+    <p class="lead">Scroll-stopping animated ads, sharp targeting and full-funnel setup for gaming, cricket, trading and forex brands.</p>
+    <div class="cta">
+      <a class="btn tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Start your campaign →</a>
+      <a class="btn ghost" href="#services">Explore services</a>
+    </div>
+    <div class="stats">
+      <div><b class="count" data-to="6">0</b><span>Specialist sectors</span></div>
+      <div><b class="count" data-to="24" data-suf="/7">0</b><span>Telegram support</span></div>
+      <div><b class="count" data-to="100" data-suf="%">0</b><span>Custom creative</span></div>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="float f1">Reach<b class="up">▲ Growing</b></div>
+    <div class="float f2">Ad status<b>● Active</b></div>
+    <div class="float f3">Format<b>Reels · Feed</b></div>
+    <div class="phone"><div class="notch"></div><div class="feed"><div class="track">
+      <div class="ad">
+        <div class="ad-h"><div class="av">P</div><div>PulseAds Gaming<small>Sponsored · 🌐</small></div></div>
+        <p>Level up your next launch with creative made for players. 🎮</p>
+        <div class="cr c1"><div class="dots"><i></i><i></i><i></i><i></i></div><div><h4>GAME<br>ON</h4><div class="sub">PLAYER ACQUISITION</div></div></div>
+        <div class="adcta"><div>pulseads.app<br><b>Gaming Ads</b></div><span>Learn more</span></div>
+        <div class="react"><span>👍❤️ 2.4K</span><span>318 comments</span></div>
+      </div>
+      <div class="ad">
+        <div class="ad-h"><div class="av">P</div><div>PulseAds Cricket<small>Sponsored · 🌐</small></div></div>
+        <p>Match-day creative that lands every over. 🏏</p>
+        <div class="cr c2"><div class="ball"></div><div><h4>MATCH<br>DAY</h4><div class="sub">SPORTS & ENGAGEMENT</div></div></div>
+        <div class="adcta"><div>pulseads.app<br><b>Cricket Ads</b></div><span>Learn more</span></div>
+        <div class="react"><span>👍🔥 5.1K</span><span>642 comments</span></div>
+      </div>
+      <div class="ad">
+        <div class="ad-h"><div class="av">P</div><div>PulseAds Markets<small>Sponsored · 🌐</small></div></div>
+        <p>Lead campaigns for eligible brokers and market education. 📈</p>
+        <div class="cr c3"><div class="ticker">NIFTY ▲ · SENSEX ▲ · BANKNIFTY ▲ · NIFTY ▲ · SENSEX ▲</div><div><h4>STOCK<br>MARKET</h4><div class="sub">QUALIFIED INTEREST</div></div><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="adcta"><div>pulseads.app<br><b>Stock Market Ads</b></div><span>Sign up</span></div>
+        <div class="react"><span>👍💡 1.9K</span><span>204 comments</span></div>
+      </div>
+      <div class="ad">
+        <div class="ad-h"><div class="av">P</div><div>PulseAds Forex<small>Sponsored · 🌐</small></div></div>
+        <p>Market-specific creative for global forex brands. 🌍</p>
+        <div class="cr c4"><div class="ticker">EUR/USD · GBP/USD · USD/JPY · XAU/USD · EUR/USD</div><div><h4>GLOBAL<br>FX</h4><div class="sub">GLOBAL MARKETS</div></div><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="adcta"><div>pulseads.app<br><b>Forex Ads</b></div><span>Learn more</span></div>
+        <div class="react"><span>👍❤️ 3.3K</span><span>411 comments</span></div>
+      </div>
+    </div></div></div>
+  </div>
+</header>
+
+<div class="marquee"><div class="mtrack">
+  <span>Gaming</span><span>Cricket</span><span>Colour Trading</span><span>Stock Market</span><span>Forex</span><span>Full Funnel</span>
+  <span>Gaming</span><span>Cricket</span><span>Colour Trading</span><span>Stock Market</span><span>Forex</span><span>Full Funnel</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="reveal"><div class="eyebrow">01 / Our expertise</div>
+  <h2>Specialist sectors. <em>Focused execution.</em></h2>
+  <p class="intro">From campaign concept to creative delivery, we bring a clear plan to every brief.</p></div>
+  <div class="grid">
+    <div class="card reveal"><div class="num">01</div><div class="ico">🎮</div><small>PLAYER ACQUISITION</small><h3>Gaming Ads</h3><p>Creative and acquisition strategy for eligible gaming and gambling brands.</p><a class="tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Discuss Gaming Ads →</a></div>
+    <div class="card reveal"><div class="num">02</div><div class="ico">🎨</div><small>CAMPAIGN STRATEGY</small><h3>Colour Trading Ads</h3><p>Campaign planning for colour prediction platforms, subject to local rules.</p><a class="tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Discuss Colour Trading Ads →</a></div>
+    <div class="card reveal"><div class="num">03</div><div class="ico">🏏</div><small>SPORTS & ENGAGEMENT</small><h3>Cricket Ads</h3><p>Match-day creative and campaigns for cricket audiences and sports brands.</p><a class="tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Discuss Cricket Ads →</a></div>
+    <div class="card reveal"><div class="num">04</div><div class="ico">📈</div><small>QUALIFIED INTEREST</small><h3>Stock Market Ads</h3><p>Lead-focused campaigns for eligible brokers, education and market services.</p><a class="tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Discuss Stock Market Ads →</a></div>
+    <div class="card reveal"><div class="num">05</div><div class="ico">💱</div><small>GLOBAL MARKETS</small><h3>Forex Trading Ads</h3><p>Market-specific creative and acquisition for eligible forex businesses.</p><a class="tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Discuss Forex Trading Ads →</a></div>
+    <div class="card reveal"><div class="num">06</div><div class="ico">🚀</div><small>END-TO-END EXECUTION</small><h3>Full Funnel Setup</h3><p>Creative, landing pages and measurement brought together in one strategy.</p><a class="tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Discuss Full Funnel Setup →</a></div>
+  </div>
+  <p class="note">Regulated sectors require appropriate licensing, platform approval and compliance with local advertising rules.</p>
+</div></section>
+
+<section id="approach"><div class="wrap">
+  <div class="reveal"><div class="eyebrow">02 / Our approach</div>
+  <h2>A clear plan. <em>From the first click.</em></h2></div>
+  <div class="steps">
+    <div class="step reveal"><b>01</b><h3>Understand</h3><p>Your audience, market and campaign objective.</p></div>
+    <div class="step reveal"><b>02</b><h3>Create</h3><p>A message and creative direction built for the brief.</p></div>
+    <div class="step reveal"><b>03</b><h3>Refine</h3><p>Review performance and improve what comes next.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="final reveal">
+  <div class="eyebrow">Your next campaign starts here</div>
+  <h2>Let's make <em>your next move.</em></h2>
+  <a class="btn tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener">Chat on Telegram →</a>
+</div></div></section>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> PulseAds. All rights reserved.</span><span>This site uses the Meta Pixel to measure ads, only with your consent. <button id="ccopen">Cookie settings</button></span></div></footer>
+
+<a class="wa tg" href="https://t.me/+7VVX0_iq37AyYjY9" target="_blank" rel="noopener" aria-label="Chat on Telegram"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M9.8 15.3l-.4 5.4c.6 0 .8-.3 1.1-.6l2.7-2.5 5.5 4c1 .6 1.7.3 2-.9l3.6-17c.3-1.5-.6-2.1-1.6-1.7L1.4 9.9c-1.4.6-1.4 1.4-.2 1.8l5.5 1.7L19.4 5.4c.6-.4 1.2-.2.7.2"/></svg></a>
+
+<div id="cc">
+  <strong>Cookies & ad measurement</strong>
+  We'd like to use the Meta Pixel (by Meta Platforms) to measure visits and Telegram clicks from our Facebook and Instagram ads. Nothing is sent unless you accept. You can change this anytime via "Cookie settings".
+  <div class="row"><button id="ccno">Reject</button><button class="ok" id="ccyes">Accept</button></div>
+</div>
+
+<script>
+/* ---------- Meta Pixel (loads only after consent) ---------- */
+var PIXEL_ID='2186567018928728',KEY='pulse_ad_consent',pixelOn=false;
+function loadPixel(){
+  if(pixelOn){fbq('consent','grant');return;}
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init',PIXEL_ID,{},{agent:'lovable'});
+  fbq('track','PageView');
+  pixelOn=true;
+}
+function getC(){try{return JSON.parse(localStorage.getItem(KEY))}catch(e){return null}}
+function setC(v){localStorage.setItem(KEY,JSON.stringify({ads:v,at:new Date().toISOString(),notice:'v1'}));apply();}
+function apply(){var c=getC();document.getElementById('cc').style.display=c?'none':'block';
+  if(c&&c.ads===true)loadPixel();else if(pixelOn)fbq('consent','revoke');}
+document.getElementById('ccyes').onclick=function(){setC(true)};
+document.getElementById('ccno').onclick=function(){setC(false)};
+document.getElementById('ccopen').onclick=function(){document.getElementById('cc').style.display='block'};
+window.addEventListener('storage',function(e){if(e.key===KEY)apply()});
+apply();
+/* Lead event on every Telegram click */
+document.querySelectorAll('.tg').forEach(function(a){a.addEventListener('click',function(){
+  var c=getC();if(c&&c.ads===true&&window.fbq)fbq('track','Lead',{content_name:a.textContent.trim()},{eventID:'lead_'+Date.now()+'_'+Math.random().toString(36).slice(2,8)});
+})});
+
+/* ---------- Effects ---------- */
+document.getElementById('yr').textContent=new Date().getFullYear();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(i%3)*0.12+'s';io.observe(el)});
+document.querySelectorAll('.count').forEach(function(el){var to=+el.dataset.to,suf=el.dataset.suf||'',n=0,st=Math.max(1,Math.ceil(to/40));var t=setInterval(function(){n=Math.min(to,n+st);el.textContent=n+suf;if(n>=to)clearInterval(t)},35)});
+document.querySelectorAll('.card').forEach(function(c){
+  c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+    c.style.setProperty('--x',x+'px');c.style.setProperty('--y',y+'px');
+    c.style.transform='rotateX('+((y/r.height-.5)*-8)+'deg) rotateY('+((x/r.width-.5)*8)+'deg) translateY(-4px)'});
+  c.addEventListener('mouseleave',function(){c.style.transform=''});
+});
+window.addEventListener('scroll',function(){var h=document.documentElement;document.getElementById('bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%'});
+</script>
+<noscript><!-- Pixel needs consent, so no noscript tracking --></noscript>
+</body>
+</html>
